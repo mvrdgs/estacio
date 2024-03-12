@@ -5,5 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Cadastro</h1>
+    <form>
+      <label for="full_name">Nome Completo:</label>
+      <input
+        id="full_name"
+        placeholder="Digite seu nome completo"
+        type="text"
+        minlength="5"
+        autofocus
+      />
+      <label for="cpf">CPF:</label>
+      <input
+        id="cpf"
+        placeholder="111.222.333-44"
+        type="cpf"
+        minlength="11"
+        maxlength="11"
+      />
+      <label for="email">Digite o email:</label>
+      <input id="email" type="email" placeholder="email@email.com" />
+      <label for="birth_date">Data de Nascimento:</label>
+      <input id="birth_date" type="date" placeholder="DD/MM/YYYY" />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
 </html>
